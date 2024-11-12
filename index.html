@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.16/dist/lenis.css">
     <title>Doze studio</title>
 </head>
 <body>
     <div class="w-full bg-zinc-900">
         <div class="parent realtive w-full h-[1400vh]">
+            
             <div class="w-full sticky top-0 left-0 h-screen overflow-x-hidden">
                 <canvas class="w-full h-screen" id="canvas"></canvas>
 
@@ -57,12 +59,34 @@
                 </div>
 
             </div>
+            
+        </div>
+        <div class="w-full py-32 px-10 bg-white">
+            <h1 class="text-7xl tracking-tighter">&reg; Our Recent Works.</h1>
+            <div class="w-1/2 p-3 headings flex flex-col gap-10 mt-32">
+                <h3 class="text-6xl">Zebro Flimsy</h3>
+                <h3 class="text-6xl">Grumby Zillo</h3>
+                <h3 class="text-6xl">Ponkle Jiffy</h3>
+                <h3 class="text-6xl">Slompy Dribble</h3>
+                <h3 class="text-6xl">Triflo Blorn</h3>
+                <h3 class="text-6xl">Klimbo Fluster</h3>
+                <h3 class="text-6xl">Zorble Tweak</h3>
+                <h3 class="text-6xl">Glambo Snark</h3>
+                <h3 class="text-6xl">Plumpy Zibble</h3>
+                <h3 class="text-6xl">Snorby Flicker</h3>
+                <h3 class="text-6xl">Grifty Plunk</h3>
+                <h3 class="text-6xl">Wumble Bork</h3>
+                <h3 class="text-6xl">Jiffy Snizzle</h3>
+                <h3 class="text-6xl">Clumpo Quirky</h3>
+                <h3 class="text-6xl">Stobly Drack</h3>
+            </div>
         </div>
     </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
 
     <script>
 
@@ -141,58 +165,85 @@
             }
 
             tl
-            .to(frames, upadateFrame(50), "first")
+            .to(frames, upadateFrame(84), "first")
             .to(".animate1", { opacity: 0, ease: "linear" }, "first")
 
-            .to(frames, upadateFrame(80), "second")
+            .to(frames, upadateFrame(168), "second")
             .to(".animate2", { opacity: 1, ease: "linear" }, "second")
 
-            .to(frames, upadateFrame(110), "third")
+            .to(frames, upadateFrame(252), "third")
             .to(".animate2", { opacity: 1, ease: "linear" }, "third")
 
-            .to(frames, upadateFrame(140), "fourth")
+            .to(frames, upadateFrame(336), "fourth")
             .to(".animate2", { opacity: 0, ease: "linear" }, "fourth")
 
-            .to(frames, upadateFrame(170), "fifth")
+            .to(frames, upadateFrame(420), "fifth")
             .to(".animate3", { opacity: 1, ease: "linear" }, "fifth")
 
-            .to(frames, upadateFrame(200), "sixth")
+            .to(frames, upadateFrame(504), "sixth")
             .to(".animate3", { opacity: 1, ease: "linear" }, "sixth")
 
-            .to(frames, upadateFrame(230), "seventh")
+            .to(frames, upadateFrame(588), "seventh")
             .to(".animate3", { opacity: 0, ease: "linear" }, "seventh")
 
-            .to(frames, upadateFrame(260), "eigth")
+            .to(frames, upadateFrame(672), "eigth")
             .to(".panel", { x: "0%", ease: "expo" }, "eigth")
 
-            .to(frames, upadateFrame(290), "ninth")
+            .to(frames, upadateFrame(756), "ninth")
             .to(".panel", { x: "0%", ease: "expo" }, "ninth")
 
-            .to(frames, upadateFrame(320), "tenth")
+            .to(frames, upadateFrame(840), "tenth")
             .to(".panel", { opacity: 0, ease: "linear" }, "tenth")
 
-            .to(frames, upadateFrame(350), "eleven")
+            .to(frames, upadateFrame(924), "eleven")
             .to("canvas", { scale: 0.5, ease: "linear" }, "eleven")
 
-            .to(frames, upadateFrame(380), "twelve")
+            .to(frames, upadateFrame(1008), "twelve")
             .to(".panelism", { opacity: 1, ease: "expo" }, "twelve")
 
-            .to(frames, upadateFrame(410), "twelve")
+            .to(frames, upadateFrame(1092), "twelve")
             .to(".panelism span", { width: 200, ease: "expo" }, "twelve")
 
-            .to(frames, upadateFrame(440), "thirteen")
+            .to(frames, upadateFrame(1176), "thirteen")
             .to("canvas", { scale: 1, ease: "linear" }, "thirteen")
 
-            .to(frames, upadateFrame(470), "fourteen")
+            .to(frames, upadateFrame(1260), "fourteen")
             .to(".panelism", { scale: 2, ease: "circ" }, "fourteen")
 
-            .to(frames, upadateFrame(500), "fifteen")
+            .to(frames, upadateFrame(1344), "fifteen")
             .to(".panelism", { scale: 2, ease: "circ" }, "fifteen")
 
 
         }
 
-        preloadImages()
+        // Initialize Lenis
+        const lenis = new Lenis();
+
+        // Use requestAnimationFrame to continuously update the scroll
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        preloadImages();
+
+        window.addEventListener("resize", function() {
+            loadImage(Math.foor(frames.currentIndex));
+        })
+
+        document.querySelectorAll(".headings h3").forEach(function(elem) {
+            gsap.from(elem, {
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top 90%",
+                    end: "bottom 10%",
+                    scrub: 2,
+                },
+                opacity: 0.3
+            })
+        })
     </script>
     
 </body>
